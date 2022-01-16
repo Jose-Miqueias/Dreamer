@@ -214,8 +214,37 @@ ul a:hover {
 }
 
 footer {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-principal2);
+    color: white;
     text-align: center;
+    padding-top: 10px;
+}
+
+footer > h1 {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.233);
+}
+
+footer > p {
+    font-size: 0.9rem;
+}
+
+footer > p#quote {
+    max-width: 400px;
+    margin: auto;
+    font-style: italic;
+}
+
+footer > .midias-sociais {
+    margin: 10px auto 10px auto;
+}
+
+.midias-sociais > a {
+    margin: 10px;
+}
+
+footer > #cabecalho {
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 5px;
 }
 
 
