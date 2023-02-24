@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilos/medias.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>| Home</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Dreamer</h1>
         <p>Seja um Oneironauta</p>
-        <nav>
+        <span id="menu-icon" class="material-symbols-outlined" onclick="clicouMenu()">menu</span>
+        <nav id="menu">
             <a href="#">Home</a>
-            <!--<a href="#">Como ter sonhos Lúcidos</a>-->
+            <a href="#">Como ter sonhos Lúcidos</a>
             <a href="#">Artigos</a>
             <a href="#">Sobre nós</a>
         </nav>
@@ -79,5 +82,26 @@
         </div>
         <p id="cabecalho">Site feito por <span>José Miquéias</span>, para <span>"Aquele lugar"</span>.</p>
     </footer>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth > 610) {
+                menu.style.display = 'block'
+            }
+
+            else {
+                menu.style.display = 'none'
+            }
+        }
+
+        function clicouMenu() {
+           if (menu.style.display == 'block') {
+            menu.style.display = 'none'
+           }
+           else {
+            menu.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>
