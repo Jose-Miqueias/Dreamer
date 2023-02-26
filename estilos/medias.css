@@ -56,7 +56,60 @@
         margin: 0;
     }
 
+    h1, h2 {
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+
+    .col1, .col2 {
+        width: 96%;
+    }
+
+    section#artigos {
+        padding: 0px;
+    }
+
+    section#artigos p {
+        font-size: 1rem;
+        text-align: justify;
+        padding: 0px 10px;
+    }
+
+    div#lista_art {
+        padding: 0px;
+        min-height: fit-content;
+    }
+
     ul{
         text-align: left;
+        list-style-type: none;
+        display: block;
+        width: 100%;
+    }
+
+    ul li {
+        display: block;
+        margin: 0px;
+        width: 100%;
+    }
+
+    ul a {
+        text-align: center;
+        display: block;
+        font-size: 1.1rem;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+        border: none;
+        border-top: 1px solid #573d81;
+        transition: 0.5s;
     }
 }
