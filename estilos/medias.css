@@ -83,33 +83,51 @@
         padding: 0px 10px;
     }
 
-    div#lista_art {
-        padding: 0px;
-        min-height: fit-content;
+    section#artigos > h3 {
+        padding-bottom: 10px;
     }
 
+    section#artigos > h3 > span#list-expand {
+        display: inline-block;
+        width: calc(100% - 120px);
+        font-size: 2rem;
+        text-align: center;
+        background-color: transparent;
+        margin-left: 5px;
+        transform: translateY(4px);
+    }
+    
     ul{
+        display: none;
+        padding: 0px;
+        min-height: fit-content;
         text-align: left;
         list-style-type: none;
-        display: block;
         width: 100%;
     }
 
     ul li {
         display: block;
         margin: 0px;
+        padding: 0px;
         width: 100%;
     }
 
     ul a {
         text-align: center;
         display: block;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: normal;
+        padding: 10px;
         color: white;
+        background-color: #6d4d9f;
         text-decoration: none;
         border: none;
-        border-top: 1px solid #573d81;
+        border-top: 1px solid #5b4085;
         transition: 0.5s;
+    }
+
+    footer > p#cabecalho {
+        font-size: 0.8rem;
     }
 }

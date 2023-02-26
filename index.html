@@ -56,19 +56,17 @@
         <section id='artigos'>
             <h2>Descubra mais sobre o mundo dos sonhos</h2>
             <p>Uma coisa bastante importante para ter vários sonhos lúcidos é estar sempre consumindo material sobre o tópico. Para ajudar nisso, lançamos regularmente artigos bastante interessantes de curiosidades sobre tudo que involve sonhos lúcidos e esse magnifico mundo dos sonhos. Sinta-se a vontade para lê-los!</p>
-            <h3 id='lista_titulo'>Artigos</h3>
-            <div id="lista_art">
-                <ul>
-                    <li><a href="#">Instáveis sonhos lúcidos</a></li>
-                    <li><a href="#">Objetivos para o mundo dos sonhos</a></li>
-                    <li><a href="#">Poderes dentro de sonhos</a></li>
-                    <li><a href="#">O ambiente encantdor de um sonho</a></li>
-                    <li><a href="#">Sinais de sonhos, o que são?</a></li>
-                    <li><a href="#">O dia em que fiquei Intangivel em meus sonhos</a></li>
-                    <li><a href="#">Ideias do que fazer em um sonho lúcido</a></li>
-                    <p><a href="#">More...</a></p>
-                </ul>
-            </div>
+            <h3>Artigos<span id="list-expand" class="material-symbols-outlined" onclick="listaExpandir()">expand_more</span></h3>
+            <ul id="relatos">
+                <li><a href="#">Instáveis sonhos lúcidos</a></li>
+                <li><a href="#">Objetivos para o mundo dos sonhos</a></li>
+                <li><a href="#">Poderes dentro de sonhos</a></li>
+                <li><a href="#">O ambiente encantdor de um sonho</a></li>
+                <li><a href="#">Sinais de sonhos, o que são?</a></li>
+                <li><a href="#">O dia em que fiquei Intangivel em meus sonhos</a></li>
+                <li><a href="#">Ideias do que fazer em um sonho lúcido</a></li>
+                <li><a href="#">More...</a></li>
+            </ul>
         </section>
     </main>
     <footer>
@@ -87,10 +85,13 @@
         function mudouTamanho() {
             if (window.innerWidth > 610) {
                 menu.style.display = 'block'
+                relatos.style.display = 'block'
+                
             }
-
+            
             else {
                 menu.style.display = 'none'
+                relatos.style.display = 'none'
             }
         }
 
@@ -101,6 +102,16 @@
            else {
             menu.style.display = 'block'
            }
+        }
+
+        function listaExpandir(){
+            if (relatos.style.display == 'block'){
+                relatos.style.display = 'none'
+                document.getElementById('list-expand').innerText = 'expand_more'
+            } else {
+                relatos.style.display = 'block'
+                document.getElementById('list-expand').innerText = 'expand_less'
+            }
         }
     </script>
 </body>

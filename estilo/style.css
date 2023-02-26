@@ -179,7 +179,7 @@ section#artigos p {
     line-height: 1.8rem
 }
 
-h3#lista_titulo {
+section#artigos > h3 {
     background-color: var(--cor-principal2);
     color: white;
     text-align: left;
@@ -188,16 +188,17 @@ h3#lista_titulo {
     padding: 5px 0px 5px 10px;
 }
 
-div#lista_art {
-    background-color: var(--cor-secundaria);
-    min-height: 400px;
-    padding: 50px 0px 0px 30px
+section#artigos > h3 > span#list-expand {
+    display: none;
 }
 
 ul {
+    display: block;
+    background-color: var(--cor-secundaria);
+    min-height: 400px;
+    padding: 50px 0px 0px 30px;
     list-style-position: inside;
     list-style-type: '\1F4DC\00A0';
-    width: fit-content;
 }
 
 ul li {
